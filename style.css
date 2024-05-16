@@ -1,0 +1,115 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  width: 100vw;
+  height: auto;
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.main-container {
+  background: #eee;
+}
+.owl-stage {
+  padding: 20px 0;
+}
+.owl-carousel .owl-item img {
+  display: block;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.owl-carousel .item {
+  background: #eee;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  box-shadow: 0 0 5px #00000041;
+  height: 350px;
+}
+h1 {
+  font-size: 1.5rem;
+}
+.item h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+.item p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  color: #666;
+}
+.owl-prev,
+.owl-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background: #fff !important;
+  border: none !important;
+  border-radius: 50% !important;
+  font-size: 20px !important;
+  color: #000 !important;
+  z-index: 1 !important;
+  box-shadow: 0 0 5px #000 !important;
+  outline: none !important;
+}
+.owl-prev {
+  left: 10px;
+}
+.owl-next {
+  right: 10px;
+}
+.owl-prev:hover,
+.owl-next:hover {
+  background: #ddd;
+}
+.line-clamp1 {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.line-clamp2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.icon-div {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  z-index: 5;
+}
+.icon-div .icon-box {
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  box-shadow: 0 0 5px #000;
+  background: #fff;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
